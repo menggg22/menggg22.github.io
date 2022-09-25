@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jianing Lin"
+  name             : "Mengyuan Li"
   avatar           : "profile.jpg"
-  bio              : "Now majoring in Robotics for Master's degree at Ann Arbor and want to be a Robo Master(Laugh)"
-  location         : "Ann Arbor"
+  bio              : "A 4th year Ph.D. student from CSE department 💻 University of Notre Dame 🇺🇸"
+  location         : "South Bend"
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            :  linjn@umich.edu
+  email            :  mli22@nd.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "undefinedzero"
+  github           : "menggg22"
   google_plus      :
   keybase          :
   instagram        :
