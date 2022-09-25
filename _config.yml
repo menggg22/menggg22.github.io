@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jianing's Website"
+title                    : "Mengyuan's Websit"
 title_separator          : "-"
-name                     : &name "Jianing Lin"
+name                     : &name "Mengyuan Li"
 description              : &description "personal description"
-url                      : https://undefinedzero.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://menggg22.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "undefinedzero/undefinedzero.github.io"
+repository               : "menggg22/menggg22.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Mengyuan Li"
   avatar           : "profile.jpg"
-  bio              : "A 4th year Ph.D. student from CSE department 💻 University of Notre Dame 🇺🇸"
+  bio              : "4th year Ph.D. student from CSE department 💻 University of Notre Dame 🇺🇸"
   location         : "South Bend"
   employer         :
   pubmed           : 
