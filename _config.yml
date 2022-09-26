@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mengyuan's Websit"
+title                    : "Mengyuan's Website"
 title_separator          : "-"
 name                     : &name "Mengyuan Li"
 description              : &description "personal description"
