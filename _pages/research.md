@@ -1,10 +1,8 @@
 ---
 layout: archive
 title: "Research"
-permalink: /Research/
+permalink: /research/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 ## **In-Memory-Computing Architecture for Memory Intensive Applications**
