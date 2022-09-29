@@ -7,11 +7,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a fourth-year Ph.D. student in the Department of Computer Science and Engineering, University of Notre Dame, Notre Dame, IN, USA, working with Prof. Xiaobo Sharon Hu. I am also the recipient of a university fellowship. 
+I am a fourth-year Ph.D. student in the Department of Computer Science and Engineering, [University of Notre Dame](https://www.nd.edu/), Notre Dame, IN, USA, working with [Prof. X. Sharon Hu](https://sites.nd.edu/xsharon-hu/). I am also the recipient of a university fellowship. 
 
 I am currently working on accelerating the emerging memory-intensive applications with the advanced development from the underlying hardware. My current research interests are machine learning, software-hardware co-design, in-memory computing and computing with emerging technologies. I have published several hardware/software codesign works as the first author in top EDA conferences: Design automation & test in europe (DATE), Design automation conference (DAC), Asia, and south pacific DAC (ASPDAC). 
 
-Previously, I graduated with highest honor on the B.E. degree in microelectronic science and engineering from Zhejiang University, Zhejiang, China, in 2019. 
+Previously, I graduated with highest honor on the B.E. degree in microelectronic science and engineering from [Zhejiang University](https://www.zju.edu.cn/english/), Zhejiang, China, in 2019. 
 
 ## News
 - <span style="color:blue">Oct 2022:</span> Our paper *Ferroelectric FET Configurable Memory Arrays and Their Applications* will show up in the 68th International Electron Devices Meeting (IEDM 2022).
