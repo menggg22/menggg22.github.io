@@ -29,7 +29,7 @@ Previously, I graduated with highest honor on the B.E. degree in microelectronic
 
 ## Publications
 - D. Reis, A. F. Laguna, **M. Li**, M. Niemier, and X. Sharon Hu, 'Ferroelectric FET Configurable Memory Arrays and Their Applications' to appear in IEEE International Electron Devices Meeting (IEDM), 2022 (Invited).
-- **M. Li**, P. Wu, B. Zhou, X. Sharon Hu, and J. Appenzeller, 'Cross-Gated Tunneling Diodes with Unprecedented PVCRs Enabling Compact SRAM Design-Part II: SRAM Circuit' to appear in IEEE Transaction on Electron Devices (TED), 2022. [link](https://ieeexplore.ieee.org/document/9905667)
+- **M. Li**, P. Wu, B. Zhou, J. Appenzeller, and X. Sharon Hu, 'Cross-Gated Tunneling Diodes with Unprecedented PVCRs Enabling Compact SRAM Design-Part II: SRAM Circuit' to appear in IEEE Transaction on Electron Devices (TED), 2022. [link](https://ieeexplore.ieee.org/document/9905667)
 - P. Wu, **M. Li**, B. Zhou, X. Sharon Hu, and J. Appenzeller, 'Cross-Gated Tunneling Diodes with Unprecedented PVCRs Enabling Compact SRAM Design—Part I: Device Concept' to appear in IEEE Transaction on Electron Devices (TED), 2022. [link](https://ieeexplore.ieee.org/document/9903335)
 - **M. Li**, A. Kazemi, A. F. Laguna, and X. Sharon Hu, 'Associative Memory Based Experience Replay for Deep Reinforcement Learning' to appear in IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2022. [link](https://arxiv.org/abs/2207.07791)
   
