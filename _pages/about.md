@@ -28,22 +28,14 @@ Previously, I graduated with highest honor on the B.E. degree in microelectronic
 - <span style="color:blue">Jul 2019:</span>  Graduated with *highest honor* from Zhejiang University (China)!
 
 ## Publications
-- Ferroelectric FET Configurable Memory Arrays and Their Applications
-  - D. Reis, A. F. Laguna, **M. Li**, M. Niemier, X. Sharon Hu
-  - IEDM 2022 (Invited)
-- Cross-Gated Tunneling Diodes with Unprecedented PVCRs Enabling Compact SRAM Design
-  - P.Wu, **M. Li**, B. Zhou, X. Sharon Hu, and J. Appenzeller
-  - IEEE Transaction on Electron Devices 2022
-- Associative Memory Based Experience Replay for Deep Reinforcement Learning [link](https://arxiv.org/abs/2207.07791)
-  - **M. Li**, A. Kazemi, A. F. Laguna, X. Sharon Hu
-  - ICCAD 2022
-- IMARS: An In-memory-computing Architecture for Recommendation System [link](https://arxiv.org/abs/2202.09433)
-  - **M. Li**, A. F. Laguna, D. Reis, X. Yin, M. Niemier, and X. Sharon Hu
-  - DAC 2022
-- A Quantization Framework for Neural Network Adaption at the Edge [link](https://ieeexplore.ieee.org/document/9474037/metrics#metrics)
-  - **M. Li**, X. Sharon Hu
-  - DATE 2021
-- Nonvolatile and Energy-Efficient FeFET-Based Multiplier for Energy-Harvesting Devices [link](https://ieeexplore.ieee.org/document/9045223)
-  - **M. Li**, X. Yin, X. Sharon Hu, and C. Zhuo
-  - ASPDAC 2020
+- D. Reis, A. F. Laguna, **M. Li**, M. Niemier, and X. Sharon Hu, 'Ferroelectric FET Configurable Memory Arrays and Their Applications' to appear in IEEE International Electron Devices Meeting (IEDM), 2022 (Invited).
+- **M. Li**, P. Wu, B. Zhou, X. Sharon Hu, and J. Appenzeller, 'Cross-Gated Tunneling Diodes with Unprecedented PVCRs Enabling Compact SRAM Design-Part II: SRAM Circuit' to appear in IEEE Transaction on Electron Devices (TED), 2022. [link](https://ieeexplore.ieee.org/document/9905667)
+- P. Wu, **M. Li**, B. Zhou, X. Sharon Hu, and J. Appenzeller, 'Cross-Gated Tunneling Diodes with Unprecedented PVCRs Enabling Compact SRAM Design—Part I: Device Concept' to appear in IEEE Transaction on Electron Devices (TED), 2022. [link](https://ieeexplore.ieee.org/document/9903335)
+- **M. Li**, A. Kazemi, A. F. Laguna, and X. Sharon Hu, 'Associative Memory Based Experience Replay for Deep Reinforcement Learning' to appear in IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2022. [link](https://arxiv.org/abs/2207.07791)
+  
+- **M. Li**, A. F. Laguna, D. Reis, X. Yin, M. Niemier, and X. Sharon Hu, 'IMARS: An In-memory-computing Architecture for Recommendation System' in IEEE/ACM Design Automation Conference (DAC), 2022. [link](https://arxiv.org/abs/2202.09433)
+- **M. Li**, and X. Sharon Hu, 'A Quantization Framework for Neural Network Adaption at the Edge' in IEEE/ACM Design, Automation, and Test in Europe (DATE) Conference and Exhibition, 2021. [link](https://ieeexplore.ieee.org/document/9474037/metrics#metrics)
+
+- **M. Li**, X. Yin, X. Sharon Hu, and C. Zhuo, 'Nonvolatile and Energy-Efficient FeFET-Based Multiplier for Energy-Harvesting Devices' in IEEE/ACM Asia and South Pacific Design Automation Conference (ASPDAC), 2020. [link](https://ieeexplore.ieee.org/document/9045223)
+
 
