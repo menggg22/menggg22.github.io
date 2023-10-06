@@ -14,7 +14,7 @@ I am currently working on accelerating the emerging memory-intensive application
 Previously, I graduated with highest honor on the B.E. degree in microelectronic science and engineering from [Zhejiang University](https://www.zju.edu.cn/english/), Zhejiang, China, in 2019. 
 
 ## News
-- <span style="color:blue">Sep 2023:</span> Our paper * C4CAM: A Compiler for CAM-based In-memory Accelerators* introducing the first end-to-end automated complication flow for CAM is now available! [link](https://arxiv.org/abs/2309.06418)
+- <span style="color:blue">Sep 2023:</span> Our paper *C4CAM: A Compiler for CAM-based In-memory Accelerators*, the first end-to-end automated complication flow for CAM, is now available! [link](https://arxiv.org/abs/2309.06418)
 - <span style="color:blue">May 2023:</span> Joined Apple  as summer intern to enhance large language model performance on Apple Silicon! 
 - <span style="color:blue">Jul 2023:</span> Our paper *Accelerating Polynomial Modular Multiplication with Crossbar-Based Compute-in-Memory* has been accepted by the 42st International Conference on Computer-Aided Design (ICCAD 2023)! [link](https://arxiv.org/pdf/2307.14557)
 - <span style="color:blue">Oct 2022:</span> Our paper *Ferroelectric FET Configurable Memory Arrays and Their Applications* shows up in the 68th International Electron Devices Meeting (IEDM 2022).
