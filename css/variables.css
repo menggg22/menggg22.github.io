@@ -1,0 +1,40 @@
+:root {
+  /* Palette — Warm Bauhaus */
+  --blue: #2D5BDA;
+  --red: #D94032;
+  --yellow: #F2C12E;
+  --black: #2A2520;
+  --bg: #FDFAF3;
+  --surface: #FFFDF8;
+  --text2: #6B6560;
+
+  /* Typography */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Modular Type Scale (1.2x ratio) */
+  --size-xs: 0.833rem;
+  --size-sm: 0.9rem;
+  --size-base: 1rem;
+  --size-md: 1.2rem;
+  --size-lg: 1.44rem;
+  --size-xl: 1.728rem;
+  --size-2xl: 2.074rem;
+  --size-3xl: 2.986rem;
+  --size-4xl: 3.583rem;
+
+  /* Legacy size aliases (mapped to scale) */
+  --name-size: var(--size-4xl);
+  --h1-size: var(--size-2xl);
+  --h2-size: var(--size-lg);
+  --body-size: 1.05rem;
+  --small-size: var(--size-sm);
+  --line-height: 1.7;
+
+  /* Spacing */
+  --container-width: 1100px;
+  --border: 3px solid var(--black);
+
+  /* Transitions */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

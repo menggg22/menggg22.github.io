@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Mengyuan Li</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/publications.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="ML" class="nav-logo-img" width="56" height="56"></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="built.html">Things I Built</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <a href="index.html" class="nav-back">← Home</a>
+
+  <header class="page-header container" style="--page-accent: var(--blue); --page-accent-rgb: 45,91,218;">
+    <div class="geo-shapes"><div class="geo-dot"></div><div class="geo-square"></div><div class="geo-circle"></div></div>
+    <h1><span class="dot" style="background:var(--blue)"></span> <span class="title-text">Publications</span></h1>
+    <p>Research in compute-in-memory, hardware-software co-design, and emerging technologies.</p>
+  </header>
+
+  <section class="pub-list container">
+
+    <div class="pub-intro reveal">
+      <p>My research focused on compute-in-memory architectures and their applications in machine learning, recommendation systems, and cryptographic acceleration. I worked on the full stack — from device-level design with emerging non-volatile memories to system-level compilation and simulation frameworks. Published in top EDA and device venues including ASPLOS, DAC, ICCAD, DATE, and IEDM.</p>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">A 28nm FeFET-Based Content-Addressable Memory for Energy-Efficient Similarity Search and Few-Shot Learning</div>
+      <div class="pub-authors">A. Vardar, N. Laleni, S. Baskaran, M. M. Sharifi, <span class="highlight">M. Li</span>, F. Muller, M. Gunter, Y. Qian, C. Zhuo, X. S. Hu, S. Dunkel, M. Trentzsch, S. Beyer, J. Muller, S. Gangopadhyay, T. Kampfe</div>
+      <div class="pub-venue">IEEE Journal of the Electron Devices Society, 2025</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">28nm Ferroelectric Field Effect Transistor Based Associative Memory Array for Few-Shot Learning and Genome Analysis</div>
+      <div class="pub-authors">A. Vardar, N. Laleni, <span class="highlight">M. Li</span>, M. M. Sharifi, M. Gunter, F. Muller, Y. Qian, C. Zhuo, X. S. Hu, S. Dunkel, M. Trentzsch, S. Beyer, J. Muller, S. Gangopadhyay, T. Kampfe</div>
+      <div class="pub-venue">VLSI-TSA 2025</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Cross-Layer Design and Design Automation for In-Memory Computing based on Non-Volatile Memory Technologies</div>
+      <div class="pub-authors">X. S. Hu, M. Y. Lee, <span class="highlight">M. Li</span>, J. P. C. De Lima, L. Liu, Z. Zhu, J. Castrillon, M. Niemier, A. F. Laguna</div>
+      <div class="pub-venue">IEEE Design &amp; Test, 2025</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Unlocking the Power of Content Addressable Memory for Memory-Intensive Applications</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span></div>
+      <div class="pub-venue">Ph.D. Dissertation, University of Notre Dame, 2024</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">C4CAM: A Compiler for CAM-based In-Memory Accelerators</div>
+      <div class="pub-authors">H. Farzaneh, J. P. C. De Lima, <span class="highlight">M. Li</span>, A. A. Khan, X. S. Hu, J. Castrillon</div>
+      <div class="pub-venue">ASPLOS 2024</div>
+      <div class="pub-links"><a href="https://arxiv.org/abs/2309.06418">Paper</a></div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">CAMASim: A Comprehensive Simulation Framework for Content-Addressable Memory based Accelerators</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, S. Liu, M. M. Sharifi, X. S. Hu</div>
+      <div class="pub-venue">arXiv 2024</div>
+      <div class="pub-links"><a href="https://arxiv.org/abs/2403.03442">Paper</a> <a href="https://github.com/menggg22/CAMASim">Code</a></div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Accelerating Recommendation Systems With In-Memory Embedding Operations</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, D. Reis, A. F. Laguna, M. Niemier, X. S. Hu</div>
+      <div class="pub-venue">IEEE Transactions on Circuits and Systems for AI, 2024</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Co-designing NVM-based Systems for Machine Learning and In-Memory Search Applications</div>
+      <div class="pub-authors">J. Henkel, L. Siddhu, H. Nassar, L. Bauer, J. J. Chen, C. Hakert, T. Seidl, <span class="highlight">M. Li</span>, et al.</div>
+      <div class="pub-venue">ICCAD 2024</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Sky-TCAM: Low-Power Skyrmion-Based Ternary Content Addressable Memory</div>
+      <div class="pub-authors">R. Zhang, C. Tang, X. Sun, <span class="highlight">M. Li</span>, W. Jin, P. Li, X. Cheng, X. S. Hu</div>
+      <div class="pub-venue">IEEE Transactions on Electron Devices, 2023</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Accelerating Polynomial Modular Multiplication with Crossbar-Based Compute-in-Memory</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, H. Geng, M. Niemier, X. S. Hu</div>
+      <div class="pub-venue">ICCAD 2023</div>
+      <div class="pub-links"><a href="https://arxiv.org/pdf/2307.14557">Paper</a></div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Ferroelectric FET Configurable Memory Arrays and Their Applications</div>
+      <div class="pub-authors">D. Reis, A. F. Laguna, <span class="highlight">M. Li</span>, M. Niemier, X. S. Hu</div>
+      <div class="pub-venue">IEDM 2022 (Invited)</div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Cross-Coupled Gated Tunneling Diodes with Unprecedented PVCRs Enabling Compact SRAM Design — Part II: SRAM Circuit</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, P. Wu, B. Zhou, J. Appenzeller, X. S. Hu</div>
+      <div class="pub-venue">IEEE Transactions on Electron Devices, 2022</div>
+      <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/9905667">Paper</a></div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Associative Memory Based Experience Replay for Deep Reinforcement Learning</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, A. Kazemi, A. F. Laguna, X. S. Hu</div>
+      <div class="pub-venue">ICCAD 2022</div>
+      <div class="pub-links"><a href="https://arxiv.org/abs/2207.07791">Paper</a></div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">IMARS: An In-memory-computing Architecture for Recommendation Systems</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, A. F. Laguna, D. Reis, X. Yin, M. Niemier, X. S. Hu</div>
+      <div class="pub-venue">DAC 2022</div>
+      <div class="pub-links"><a href="https://arxiv.org/abs/2202.09433">Paper</a></div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">A Quantization Framework for Neural Network Adaption at the Edge</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, X. S. Hu</div>
+      <div class="pub-venue">DATE 2021</div>
+      <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/9474037/metrics#metrics">Paper</a></div>
+    </div>
+
+    <div class="card pub-card reveal">
+      <div class="pub-title">Nonvolatile and Energy-Efficient FeFET-Based Multiplier for Energy-Harvesting Devices</div>
+      <div class="pub-authors"><span class="highlight">M. Li</span>, X. Yin, X. S. Hu, C. Zhuo</div>
+      <div class="pub-venue">ASP-DAC 2020</div>
+      <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/9045223">Paper</a></div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-blocks"><span></span><span></span><span></span></div>
+      <p class="footer-text">&copy; 2026 Menggg</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

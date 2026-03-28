@@ -1,0 +1,28 @@
+/* Blog */
+.blog-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0 8rem;
+  text-align: center;
+  position: relative;
+}
+
+.blog-placeholder .deco-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--red);
+  opacity: 0.1;
+  margin-bottom: 2rem;
+}
+
+.blog-placeholder h2 {
+  margin-bottom: 0.75rem;
+}
+
+.blog-placeholder p {
+  color: var(--text2);
+  max-width: 400px;
+}

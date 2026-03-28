@@ -1,0 +1,138 @@
+@media (max-width: 768px) {
+  :root {
+    --name-size: 2.986rem;
+    --h1-size: 1.728rem;
+    --h2-size: var(--size-md);
+  }
+
+  /* Nav mobile */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 1.25rem;
+    border-bottom: var(--border);
+    z-index: 99;
+  }
+
+  .nav-links a {
+    border: none;
+    padding: 0.4rem 0;
+    border-radius: 0;
+  }
+
+  .nav-links a.active {
+    background: none;
+    color: var(--black);
+    font-weight: 600;
+    border: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Back link on subpages */
+  .nav-back {
+    display: block;
+    padding: 0.75rem 2rem;
+    font-size: var(--size-sm);
+    color: var(--text2);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .nav-back:hover {
+    color: var(--black);
+  }
+
+  /* Hero grid — stack */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-text {
+    padding: 3rem 2rem !important;
+  }
+
+  .mondrian {
+    height: 300px;
+    border-left: none;
+    border-top: 3px solid var(--black);
+  }
+
+  .mondrian .circle-overlay {
+    width: 100px;
+    height: 100px;
+  }
+
+  .m-label {
+    font-size: 1rem;
+  }
+
+  .m-sublabel {
+    display: none;
+  }
+
+  /* Page header */
+  .page-header {
+    padding: 4.5rem 0 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-header::before {
+    height: 4px;
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    margin-top: 1.5rem;
+  }
+
+  .page-header .geo-shapes {
+    display: none;
+  }
+
+  /* Publication intro */
+  .pub-intro {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  /* Built grid */
+  .built-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --name-size: var(--size-2xl);
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .hero-text {
+    padding: 2rem 1.25rem !important;
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem;
+  }
+}

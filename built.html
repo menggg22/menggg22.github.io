@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things I Built — Mengyuan Li</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/built.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="ML" class="nav-logo-img" width="56" height="56"></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="built.html" class="active">Things I Built</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <a href="index.html" class="nav-back">← Home</a>
+
+  <header class="page-header container" style="--page-accent: var(--yellow); --page-accent-rgb: 242,193,46;">
+    <div class="geo-shapes"><div class="geo-dot"></div><div class="geo-square"></div><div class="geo-circle"></div></div>
+    <h1><span class="dot" style="background:var(--yellow)"></span> <span class="title-text">Things I Built</span></h1>
+    <p>A few things I've worked on across industry, research, and school.</p>
+  </header>
+
+  <section class="built-grid container">
+
+    <div class="grid-card reveal">
+      <div class="grid-card-img"><img src="images/projects/pcc.jpg" alt="Private Cloud Compute"></div>
+      <div class="grid-card-body">
+        <div class="built-title"><span class="built-dot" style="background:var(--yellow)"></span>Private Cloud Compute</div>
+        <div class="built-context">Apple &middot; 2024 – present</div>
+        <p class="built-desc">ML infrastructure for Apple's Private Cloud Compute — a new approach to running AI models in the cloud with end-to-end privacy guarantees.</p>
+        <div class="built-links">
+          <a href="https://security.apple.com/blog/private-cloud-compute/">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-card reveal">
+      <div class="grid-card-img"><img src="images/projects/cam.png" alt="CAMASim simulation framework"></div>
+      <div class="grid-card-body">
+        <div class="built-title"><span class="built-dot" style="background:var(--yellow)"></span>CAMASim</div>
+        <div class="built-context">University of Notre Dame &middot; 2023 &middot; Open source</div>
+        <p class="built-desc">A comprehensive simulation framework for content-addressable memory based accelerators. Enables researchers to evaluate CAM designs across the full stack.</p>
+        <div class="built-links">
+          <a href="https://github.com/menggg22/CAMASim">GitHub</a>
+          <a href="https://arxiv.org/abs/2403.03442">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-card reveal">
+      <div class="grid-card-img"><img src="images/projects/hero2.gif" alt="RoboMaster HERO robot in action"></div>
+      <div class="grid-card-body">
+        <div class="built-title"><span class="built-dot" style="background:var(--yellow)"></span>RoboMaster Robotics Competition</div>
+        <div class="built-context">Zhejiang University &middot; 2017 – 2019</div>
+        <p class="built-desc">Led the HERO robot team and vision group across three competition years. Built the electronic system, implemented visual tracking, and managed a 30-person team.</p>
+        <div class="built-links">
+          <a href="https://github.com/HelloWorldTeam">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-blocks"><span></span><span></span><span></span></div>
+      <p class="footer-text">&copy; 2026 Menggg</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

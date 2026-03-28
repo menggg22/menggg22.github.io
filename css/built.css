@@ -1,0 +1,103 @@
+/* Things I Built */
+.built-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem 0 4rem;
+}
+
+.grid-card {
+  background: var(--surface);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-left: 4px solid transparent;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.grid-card:hover { border-left-color: var(--yellow); }
+
+.grid-card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid-card:hover .grid-card-img img {
+  transform: scale(1.05);
+}
+
+.grid-card-body {
+  padding: 1.25rem;
+}
+
+.built-title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--size-md);
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+.built-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.built-context {
+  color: var(--text2);
+  font-size: var(--small-size);
+  margin-bottom: 0.6rem;
+}
+
+.built-desc {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.built-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.built-links a {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border: 1.5px solid var(--yellow);
+  border-radius: 4px;
+  color: #9A8420;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.built-links a:hover {
+  background: var(--yellow);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .built-grid {
+    grid-template-columns: 1fr;
+  }
+}
