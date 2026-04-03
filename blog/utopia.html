@@ -34,7 +34,7 @@
 
   <a href="../blog.html" class="nav-back">&larr; Blog</a>
 
-  <header class="article-header container">
+  <header class="article-header">
     <div class="article-meta">
       <span class="tag">Agent Systems</span>
       <span>April 2026</span>
@@ -42,7 +42,6 @@
       <span>12 min read</span>
     </div>
     <h1>Digital Brook Farm: Simulating Utopia with AI Agents</h1>
-    <p class="article-byline">By Menggg</p>
   </header>
 
   <article class="article-body">
@@ -51,21 +50,27 @@
 
     <p>So my agent and I sat down one evening and designed a tiny experiment.</p>
 
-    <p>If agent systems copy human organization, can we flip it? Can we use agents to explore how human societies develop?</p>
+    <blockquote class="callout"><p>If agent systems copy human organization, can we flip it? Can we use agents to explore how human societies develop?</p></blockquote>
 
     <p>History is full of real utopian experiments where people tried to build a perfect society from scratch. They all failed. They failed in specific, documented ways: free riders, founder dependency, ideological splits, financial collapse. What if we could simulate these communities by giving AI agents real personalities and dropping them into a shared environment? Would they fail the same way?</p>
 
-    <p>We picked the most famous American utopian experiment: <strong><a href="https://en.wikipedia.org/wiki/Brook_Farm">Brook Farm</a></strong> (1841&ndash;1847), a transcendentalist commune in Massachusetts. We read about the key participants: their biographies, their letters, their private frustrations. Nathaniel Hawthorne joined hoping to save money for his wedding and left 18 months later, calling it a &ldquo;dung-heap.&rdquo; George Ripley, the founder, spent 13 years repaying the community&rsquo;s debts. Charles Dana, 22 years old and speaking ten languages, would go on to become Lincoln&rsquo;s spy during the Civil War.</p>
+    <p>We picked the most famous American utopian experiment: <strong><a href="https://en.wikipedia.org/wiki/Brook_Farm">Brook Farm</a></strong> (1841&ndash;1847), a transcendentalist commune in Massachusetts. We read about the key participants: their biographies, their letters, their private frustrations.</p>
+
+    <ul>
+      <li><strong>Nathaniel Hawthorne</strong> joined hoping to save money for his wedding and left 18 months later, calling it a &ldquo;dung-heap.&rdquo;</li>
+      <li><strong>George Ripley</strong>, the founder, spent 13 years repaying the community&rsquo;s debts.</li>
+      <li><strong>Charles Dana</strong>, 22 years old and speaking ten languages, would go on to become Lincoln&rsquo;s spy during the Civil War.</li>
+    </ul>
 
     <p>We wrote persona cards for each of them. Not invented characters. Real people with real motivations, real skills, and real private goals they would not say aloud. We noted every key historical event: the Fourierist conversion that split the community, the $7,000 phalanstery that burned down uninsured, the smallpox outbreak.</p>
 
-    <p>Then we threw them into the little bubble and let it run.</p>
+    <p>Then we threw them into the little bubble and let it run. 🫧</p>
 
     <hr>
 
     <h2>Setup</h2>
 
-    <p>Five agents. One shared farm. Thirty rounds spanning five simulated years (1841&ndash;1846).</p>
+    <p><strong>Five agents. One shared farm. Thirty rounds spanning five simulated years (1841&ndash;1846).</strong></p>
 
     <p>Each agent gets a persona card built from historical research: who they were, why they joined, what they secretly wanted, and what skills they brought.</p>
 
@@ -134,7 +139,7 @@
 
     <h2>What Happened</h2>
 
-    <p>The simulation ran for 30 rounds: 81 minutes of wall time, 304 LLM calls, 1,401 logged events. Here is how the community died.</p>
+    <p>The simulation ran for 30 rounds: <strong>81 minutes</strong> of wall time, <strong>304 LLM calls</strong>, <strong>1,401 logged events</strong>. Here is how the community died.</p>
 
     <h3>The Early Days Were Beautiful</h3>
 
@@ -142,7 +147,7 @@
 
     <p>The problem was already visible in the data. Across 30 rounds and 5 agents, there were only 22 total farming actions. Ripley performed 11 of them. Half of all farming, by himself. Food reached zero by round 5 and never recovered. The community survived on emergency food purchases from neighbors, spending $20 per round from the treasury.</p>
 
-    <p>Intellectuals, it turns out, do not like farming. Even simulated ones.</p>
+    <p><em>Intellectuals, it turns out, do not like farming. Even simulated ones.</em></p>
 
     <figure>
       <img src="../images/blog/utopia/morale.png" alt="Community morale over 30 rounds, peaking at 95% then dropping to 0% after Hawthorne's departure">
@@ -202,7 +207,7 @@
 
     <p><strong>Round 1, Ripley meets Hawthorne.</strong> Ripley extends his hand and asks: <em>&ldquo;Tell me truthfully, what brings you here?&rdquo;</em></p>
 
-    <p>Hawthorne&rsquo;s inner thought, which Ripley never sees: <em>&ldquo;He sees through me already, of course. No use in flattery or pretense. Ripley knows I am here for the money. The only question is whether he will hold it against me.&rdquo;</em></p>
+    <blockquote class="callout"><p>Hawthorne&rsquo;s inner thought, which Ripley never sees: &ldquo;He sees through me already, of course. No use in flattery or pretense. Ripley knows I am here for the money. The only question is whether he will hold it against me.&rdquo;</p></blockquote>
 
     <p><strong>Round 6, Hawthorne confronts Dwight.</strong> Hawthorne, having overheard Dwight&rsquo;s question to Ripley about whether beauty can sustain them: <em>&ldquo;I wonder if you would ask me the same question, and what you would make of my answer.&rdquo;</em></p>
 
@@ -210,11 +215,11 @@
 
     <p><strong>Round 7, Ripley finds Dwight by the barn.</strong> <em>&ldquo;John, you have been quiet these past weeks. I found you standing alone by the barn just now, looking out toward Boston as if the city itself might answer some question you are afraid to ask aloud.&rdquo;</em></p>
 
-    <p>Dwight agrees to walk. His inner thought: <em>&ldquo;I am the serpent in this Eden, hissing that the fruit is poisoned.&rdquo;</em></p>
+    <blockquote class="callout"><p>Dwight agrees to walk. His inner thought: &ldquo;I am the serpent in this Eden, hissing that the fruit is poisoned.&rdquo;</p></blockquote>
 
     <p><strong>Round 9, the Ripleys stop pretending.</strong> Sophia: <em>&ldquo;He has already gone because we taught him to look for the transcendent, George, and we could not deliver it. We promised him a new Eden, and what we have built is a very tired farm with excellent Latin instruction and bills we cannot pay.&rdquo;</em></p>
 
-    <p>These are Claude Haiku conversations. Not GPT-4. Not Opus. Haiku. The smallest model in the family produced inner thoughts like <em>&ldquo;I am the serpent in this Eden.&rdquo;</em> I did not expect that.</p>
+    <p>These are Claude Haiku conversations. Not GPT-4. Not Opus. <strong>Haiku</strong>. The smallest model in the family produced inner thoughts like <em>&ldquo;I am the serpent in this Eden.&rdquo;</em> I did not expect that.</p>
 
     <hr>
 
@@ -273,13 +278,20 @@
 
     <h2>What the Simulation Got Wrong</h2>
 
-    <p><strong>Dwight left too early.</strong> Historical Dwight stayed until the end in 1847. Simulated Dwight left in 1844. The simulation made him too sensitive to morale collapse. Once morale hit zero, his agent spiraled toward departure. In reality, Dwight&rsquo;s deep attachment to the community&rsquo;s musical life kept him anchored long after the economics failed. Lesson: hobbies are load-bearing.</p>
+    <h3>Dwight left too early</h3>
+    <p>Historical Dwight stayed until 1847. Simulated Dwight left in 1844. The simulation made him too sensitive to morale collapse&mdash;once it hit zero, he spiraled toward departure. In reality, his deep attachment to the community&rsquo;s musical life kept him anchored long after the economics failed.</p>
+    <p><em>Lesson: hobbies are load-bearing.</em></p>
 
-    <p><strong>No Fourier conversion.</strong> The real Brook Farm adopted Charles Fourier&rsquo;s phalanx system in 1844, a dramatic ideological pivot that split the community. In the simulation, nobody proposed it. The agents were too occupied with the immediate crisis to consider systemic redesign. This might actually be realistic: people in survival mode do not reorganize. They cope. Still, it missed a key historical turning point.</p>
+    <h3>No Fourier conversion</h3>
+    <p>The real Brook Farm adopted Fourier&rsquo;s phalanx system in 1844&mdash;a dramatic ideological pivot that split the community. In the simulation, nobody proposed it. The agents were too occupied with the immediate crisis to consider systemic redesign.</p>
+    <p><em>People in survival mode do not reorganize. They cope.</em></p>
 
-    <p><strong>Morale was too sticky at zero.</strong> Once morale hit 0%, it never recovered. Real communities oscillate. A good harvest, a successful concert, a new member joining can temporarily lift spirits even in decline. The simulation needed a recovery mechanism for positive events. Nineteen rounds of zero morale is not collapse. It is a flatline.</p>
+    <h3>Morale was too sticky at zero</h3>
+    <p>Once morale hit 0%, it never recovered. Real communities oscillate&mdash;a good harvest, a successful concert, a new member can temporarily lift spirits. Nineteen rounds of zero morale is not collapse. It is a flatline. The simulation needed a recovery mechanism.</p>
 
-    <p><strong>The conversations were too literary.</strong> The agents produced conversations that read like 19th-century literary fiction. Beautiful, almost too coherent. Real people in crisis do not speak in polished paragraphs. They stammer, contradict themselves, say things they do not mean. The agents were performing authenticity rather than being authentic. Though this is, in a way, exactly what the real Brook Farm members did. They were all writers and intellectuals performing the simple life. So maybe Haiku got it right by accident.</p>
+    <h3>The conversations were too literary</h3>
+    <p>The agents spoke like 19th-century fiction. Beautiful, almost too coherent. Real people in crisis stammer, contradict themselves, say things they do not mean. The agents were performing authenticity rather than being authentic.</p>
+    <p><em>Though this is, in a way, exactly what the real Brook Farm members did. They were all writers and intellectuals performing the simple life. So maybe Haiku got it right by accident.</em></p>
 
     <figure>
       <img src="../images/blog/utopia/counterfactual.png" alt="Counterfactual analysis showing how different conditions affect community outcomes">
@@ -290,13 +302,24 @@
 
     <h2>Unexpected Findings</h2>
 
-    <p><strong>The speech spiral.</strong> Dana gave 15 speeches about the financial crisis and farmed 3 times. He became the person who discussed the problem instead of working on it. This emergent behavior, substituting discourse for action, is a failure mode observed in real organizations. The agent was not programmed to do this. It emerged from the tension between his analytical persona and his loyalty to the group. If you have ever worked at a company where everyone agrees the problem is urgent and nobody does anything about it, you have seen the speech spiral.</p>
+    <h3>The speech spiral</h3>
+    <p>Dana gave 15 speeches about the financial crisis and farmed 3 times. He became the person who discussed the problem instead of working on it. The agent was not programmed to do this&mdash;it emerged from the tension between his analytical persona and his loyalty to the group.</p>
+    <p><em>If you have ever worked at a company where everyone agrees the problem is urgent and nobody does anything about it, you have seen the speech spiral.</em></p>
 
-    <p><strong>Sophia as invisible load-bearer.</strong> She taught 20 out of 30 rounds with barely any acknowledgment from the others. The school was the only thing keeping the community financially alive, and nobody seemed to notice. Her satisfaction stayed high not because she was appreciated, because she had work that was genuinely hers. The agents reproduced the pattern of invisible female labor without being instructed to.</p>
+    <h3>Sophia as invisible load-bearer</h3>
+    <p>She taught 20 out of 30 rounds with barely any acknowledgment. The school was the only thing keeping the community financially alive, and nobody seemed to notice. Her satisfaction stayed high not because she was appreciated, but because she had work that was genuinely hers.</p>
+    <p><em>The agents reproduced the pattern of invisible female labor without being instructed to.</em></p>
 
-    <p><strong>Quality of inner thoughts.</strong> We expected simple reasoning. We got Hawthorne thinking: <em>&ldquo;We are all fugitives of a sort, though we wear our flight as noble purpose.&rdquo;</em> And Dana, after deflecting Ripley&rsquo;s plea for help: <em>&ldquo;This is the day I moved from observer of our collapse to active participant in the silence that enables it.&rdquo;</em> Tagged with: <strong>Cowardice</strong>. The agents were doing genuine introspection, not just decision-making.</p>
+    <h3>Quality of inner thoughts</h3>
+    <p>We expected simple reasoning. We got Hawthorne thinking:</p>
+    <blockquote class="callout"><p>&ldquo;We are all fugitives of a sort, though we wear our flight as noble purpose.&rdquo;</p></blockquote>
+    <p>And Dana, after deflecting Ripley&rsquo;s plea for help:</p>
+    <blockquote class="callout"><p>&ldquo;This is the day I moved from observer of our collapse to active participant in the silence that enables it.&rdquo; Tagged with: <strong>Cowardice</strong>.</p></blockquote>
+    <p>The agents were doing genuine introspection, not just decision-making.</p>
 
-    <p><strong>Key moments worked.</strong> We gave agents the ability to flag certain events as key moments with emotional tags. They used it sparingly: 21 moments across 30 rounds. The moments they chose were narratively correct. The night Dwight confessed doubt. Hawthorne&rsquo;s departure. The conversation where Sophia named what was broken. These are the moments a novelist would choose. They are also the moments the real Brook Farm members wrote about in their letters.</p>
+    <h3>Key moments worked</h3>
+    <p>We gave agents the ability to flag events as key moments with emotional tags. They used it sparingly: 21 moments across 30 rounds. The moments they chose were narratively correct&mdash;the night Dwight confessed doubt, Hawthorne&rsquo;s departure, the conversation where Sophia named what was broken.</p>
+    <p><em>These are the moments a novelist would choose. They are also the moments the real Brook Farm members wrote about in their letters.</em></p>
 
     <hr>
 
