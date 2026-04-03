@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Brook Farm: When Agents Build Utopia — Mengyuan Li</title>
+  <meta name="description" content="What happens when you give AI agents real historical personalities and drop them into a simulated utopian commune? They fail the same way humans did.">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/article.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="ML" class="nav-logo-img" width="56" height="56"></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../built.html">Things I Built</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <a href="../blog.html" class="nav-back">&larr; Blog</a>
+
+  <header class="article-header container">
+    <div class="article-meta">
+      <span class="tag">Agent Systems</span>
+      <span>April 2026</span>
+    </div>
+    <h1>Digital Brook Farm: Simulating Utopia with AI Agents</h1>
+  </header>
+
+  <article class="article-body">
+
+    <p>When I study different agent design patterns, I keep noticing something: they almost all follow how humans organize. Multi-agent debate mirrors a trading desk. Skill-based agents mirror a team with job titles. Hierarchical agents mirror management chains. The patterns are not new. We have been designing them for thousands of years. We just called them "organizations."</p>
+
+    <p>So my agent and I sat down one evening and designed a tiny experiment.</p>
+
+    <p>If agent systems copy human organization, can we flip it? Can we use agents to explore how human societies develop?</p>
+
+    <p>History is full of real utopian experiments where people tried to build a perfect society from scratch. They all failed. They failed in specific, documented ways: free riders, founder dependency, ideological splits, financial collapse. What if we could simulate these communities by giving AI agents real personalities and dropping them into a shared environment? Would they fail the same way?</p>
+
+    <p>We picked the most famous American utopian experiment: <strong>Brook Farm</strong> (1841&ndash;1847), a transcendentalist commune in Massachusetts. We read about the key participants: their biographies, their letters, their private frustrations. Nathaniel Hawthorne joined hoping to save money for his wedding and left 18 months later, calling it a &ldquo;dung-heap.&rdquo; George Ripley, the founder, spent 13 years repaying the community&rsquo;s debts. Charles Dana, 22 years old and speaking ten languages, would go on to become Lincoln&rsquo;s spy during the Civil War.</p>
+
+    <p>We wrote persona cards for each of them. Not invented characters. Real people with real motivations, real skills, and real private goals they would not say aloud. We noted every key historical event: the Fourierist conversion that split the community, the $7,000 phalanstery that burned down uninsured, the smallpox outbreak.</p>
+
+    <p>Then we threw them into the little bubble and let it run.</p>
+
+    <hr>
+
+    <h2>Setup</h2>
+
+    <p>Five agents. One shared farm. Thirty rounds spanning five simulated years (1841&ndash;1846).</p>
+
+    <p>Each agent gets a persona card built from historical research: who they were, why they joined, what they secretly wanted, and what skills they brought.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Agent</th>
+          <th>Role</th>
+          <th>The Real Person</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>George Ripley</strong></td>
+          <td>Founder, visionary</td>
+          <td>Former minister who staked everything on proving idealism works</td>
+        </tr>
+        <tr>
+          <td><strong>Nathaniel Hawthorne</strong></td>
+          <td>Trustee of Finance, writer</td>
+          <td>Joined for money, not ideology. Could not write. Hands full of blisters.</td>
+        </tr>
+        <tr>
+          <td><strong>Sophia Ripley</strong></td>
+          <td>Head of School</td>
+          <td>George&rsquo;s wife. Ran the only profitable operation. Missed two classes in six years.</td>
+        </tr>
+        <tr>
+          <td><strong>Charles Dana</strong></td>
+          <td>Editor, finance manager</td>
+          <td>22, self-made, spoke ten languages. The &ldquo;get things done&rdquo; person.</td>
+        </tr>
+        <tr>
+          <td><strong>John Sullivan Dwight</strong></td>
+          <td>Music teacher</td>
+          <td>Failed minister turned music critic. Organized the evening gatherings.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The environment is simple: shared food, shared money, community morale. Each round, agents choose what to do: farm, teach, build, write, organize events, propose rules, or leave. Food depletes if nobody farms. The school generates income. Historical events fire at the right moments.</p>
+
+    <p>The agents do not know what happened in real history. They only know who they are and what they see.</p>
+
+    <hr>
+
+    <h2>Agent Architecture</h2>
+
+    <p>Each simulation round has three phases.</p>
+
+    <p><strong>Morning (Act).</strong> Each agent observes the environment: food level, money, what others did yesterday, any events or crises. They choose one action. The writer wants to write. The farmer knows someone has to farm. The founder tries to hold it all together.</p>
+
+    <p><strong>Afternoon (Talk).</strong> Two or three pairs of agents have conversations. Pairs are selected by tension: low trust triggers conversation. If someone proposed a rule, everyone debates and votes. Each agent has inner thoughts that the other person cannot see.</p>
+
+    <p><strong>Night (Reflect).</strong> Each agent privately updates their memory: what mattered today, how they feel about each person, what worries them. Significant events get flagged as key moments and stored permanently.</p>
+
+    <p>The memory system carries four components:</p>
+    <ul>
+      <li><strong>Key moments</strong>: permanently stored, emotionally tagged</li>
+      <li><strong>Relationships</strong>: trust level and attitude toward each person, updated every round</li>
+      <li><strong>Concerns</strong>: a running list of worries (&ldquo;money is running out,&rdquo; &ldquo;I cannot write here&rdquo;)</li>
+      <li><strong>Observations</strong>: what they notice about others (&ldquo;Hawthorne was not in the fields again&rdquo;)</li>
+    </ul>
+
+    <hr>
+
+    <h2>What Happened</h2>
+
+    <p>The simulation ran for 30 rounds: 81 minutes of wall time, 304 LLM calls, 1,401 logged events. Here is how the community died.</p>
+
+    <h3>The Early Days Were Beautiful</h3>
+
+    <p>Morale peaked at 95% by round 4. Ripley farmed. Dana wrote for The Harbinger. Sophia opened the school. Dwight organized evening concerts with Beethoven. Hawthorne taught children and wrote in the margins.</p>
+
+    <p>The problem was already visible in the data. Across 30 rounds and 5 agents, there were only 22 total farming actions. Ripley performed 11 of them. Half of all farming, by himself. Food reached zero by round 5 and never recovered. The community survived on emergency food purchases from neighbors, spending $20 per round from the treasury.</p>
+
+    <p>Intellectuals, it turns out, do not like farming. Even simulated ones.</p>
+
+    <figure>
+      <img src="../images/blog/utopia/morale.png" alt="Community morale over 30 rounds, peaking at 95% then dropping to 0% after Hawthorne's departure">
+      <figcaption>Community morale over 30 rounds. The collapse after Hawthorne&rsquo;s departure at round 11 was permanent.</figcaption>
+    </figure>
+
+    <h3>The Doubt Becomes Audible (Rounds 6&ndash;10)</h3>
+
+    <p>By round 6, Dwight asked Ripley during an evening walk: <em>&ldquo;Do you still believe the beauty we cultivate here serves our purpose, or have the ledgers begun to whisper doubts even to you?&rdquo;</em> Ripley could not answer. That night, the agent flagged this as a key moment and tagged it: <strong>Terror</strong>.</p>
+
+    <p>By round 8, Dwight could not get out of bed. Dana found him in his room, brought him real coffee, and asked if he was well. Dwight&rsquo;s inner thought: <em>&ldquo;He is not interrogating me about labor; he is asking if I am well, which is a far more dangerous question.&rdquo;</em></p>
+
+    <p>We did not program any of this. The agent decided that Dana bringing coffee was more threatening than a performance review.</p>
+
+    <h3>First Departure: Hawthorne (Round 11)</h3>
+
+    <p>Round 11, December 1842. Hawthorne&rsquo;s parting words to Ripley:</p>
+
+    <blockquote>
+      <p>&ldquo;George, I will leave within the week. I came here in good faith and incomplete honesty. I needed capital for marriage, and I hoped the labor might sustain that need. You have been honest today in a way you had not been before, and I will repay that honesty with clarity: I have no capital, I have no quiet, and I have no true belief in what we are building. My absence will preserve both your stores and your conscience. I wish you well, and I mean that without irony.&rdquo;</p>
+    </blockquote>
+
+    <p>In real history, Hawthorne left in November 1842, about 18 months after joining. The simulation produced December 1842, round 11. Almost exact. Nobody told the agent when to leave.</p>
+
+    <h3>Collapse (Rounds 12&ndash;30)</h3>
+
+    <p>After Hawthorne&rsquo;s departure, morale dropped to 0% and never recovered. It remained at zero for 19 consecutive rounds.</p>
+
+    <p>Sophia kept teaching. Twenty out of thirty rounds, the most consistent contributor. Her satisfaction stayed high because teaching gave her purpose. She was not running the community; she was running the school. The school was the only functional institution. This matches history: the school was Brook Farm&rsquo;s only reliable income source.</p>
+
+    <p>Dana became the voice of financial reality. He gave roughly 15 speeches about the crisis. He farmed 3 times. The community discussed its problems more than it worked on them.</p>
+
+    <p>Ripley farmed more than anyone. His satisfaction reached 0 by round 13 and stayed there for 17 more rounds. He continued anyway. The historical Ripley spent 13 years after Brook Farm repaying its debts.</p>
+
+    <figure>
+      <img src="../images/blog/utopia/actions.png" alt="Distribution of actions by agent across 30 rounds showing Ripley's dominance in farming and Sophia's in teaching">
+      <figcaption>Action distribution across 30 rounds. Ripley carried farming; Sophia carried the school.</figcaption>
+    </figure>
+
+    <h3>Second Departure: Dwight (Round 21)</h3>
+
+    <p>Round 21, August 1844. Dwight left silently. He left a note on the table:</p>
+
+    <blockquote>
+      <p>&ldquo;I have failed the community by staying. Forgive me. &mdash; JSD&rdquo;</p>
+    </blockquote>
+
+    <p>The last three, Ripley, Sophia, and Dana, continued until the end. Money declining. Food at emergency levels. Morale permanently at zero. A community learning to be alone together.</p>
+
+    <p>Final state: Food 10, Money $224 (down from $500), Morale 0%.</p>
+
+    <hr>
+
+    <h2>The Conversations</h2>
+
+    <p>The most surprising output was the conversations. The agents developed genuine dramatic tension, with subtext and inner thoughts the other person could not see.</p>
+
+    <p><strong>Round 1, Ripley meets Hawthorne.</strong> Ripley extends his hand and asks: <em>&ldquo;Tell me truthfully, what brings you here?&rdquo;</em></p>
+
+    <p>Hawthorne&rsquo;s inner thought, which Ripley never sees: <em>&ldquo;He sees through me already, of course. No use in flattery or pretense. Ripley knows I am here for the money. The only question is whether he will hold it against me.&rdquo;</em></p>
+
+    <p><strong>Round 6, Hawthorne confronts Dwight.</strong> Hawthorne, having overheard Dwight&rsquo;s question to Ripley about whether beauty can sustain them: <em>&ldquo;I wonder if you would ask me the same question, and what you would make of my answer.&rdquo;</em></p>
+
+    <p>Dwight&rsquo;s response: <em>&ldquo;I think I am afraid of your answer. Or perhaps more afraid that it would mirror my own.&rdquo;</em></p>
+
+    <p><strong>Round 7, Ripley finds Dwight by the barn.</strong> <em>&ldquo;John, you have been quiet these past weeks. I found you standing alone by the barn just now, looking out toward Boston as if the city itself might answer some question you are afraid to ask aloud.&rdquo;</em></p>
+
+    <p>Dwight agrees to walk. His inner thought: <em>&ldquo;I am the serpent in this Eden, hissing that the fruit is poisoned.&rdquo;</em></p>
+
+    <p><strong>Round 9, the Ripleys stop pretending.</strong> Sophia: <em>&ldquo;He has already gone because we taught him to look for the transcendent, George, and we could not deliver it. We promised him a new Eden, and what we have built is a very tired farm with excellent Latin instruction and bills we cannot pay.&rdquo;</em></p>
+
+    <p>These are Claude Haiku conversations. Not GPT-4. Not Opus. Haiku. The smallest model in the family produced inner thoughts like <em>&ldquo;I am the serpent in this Eden.&rdquo;</em> I did not expect that.</p>
+
+    <hr>
+
+    <h2>Comparison to History</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>History</th>
+          <th>Simulation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hawthorne departs</td>
+          <td>Nov 1842 (~18 months)</td>
+          <td>Round 11 / Dec 1842 (~18 months)</td>
+        </tr>
+        <tr>
+          <td>Financial collapse</td>
+          <td>Gradual, 1844&ndash;1846</td>
+          <td>Gradual, rounds 10&ndash;30</td>
+        </tr>
+        <tr>
+          <td>Food problems</td>
+          <td>Chronic underfunding</td>
+          <td>Food reached 0 by round 5, never recovered</td>
+        </tr>
+        <tr>
+          <td>School as income</td>
+          <td>Primary revenue source</td>
+          <td>Sophia taught 20/30 rounds</td>
+        </tr>
+        <tr>
+          <td>Ripley&rsquo;s burden</td>
+          <td>Carried debt 13 years</td>
+          <td>Satisfaction 0 for 17 rounds, farmed the most</td>
+        </tr>
+        <tr>
+          <td>Intellectuals won&rsquo;t farm</td>
+          <td>Core documented failure</td>
+          <td>22 farm actions total, half by Ripley alone</td>
+        </tr>
+        <tr>
+          <td>Dana sees the math</td>
+          <td>Stayed out of loyalty</td>
+          <td>15 speeches about the crisis, kept staying</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The structural patterns reproduced without being programmed. Nobody told Hawthorne when to leave. Nobody told Ripley to sacrifice himself. Nobody told Dana to give speeches instead of farming. The personas, built from historical biographies, carried the same tensions that the real people carried. The system expressed those tensions the same way.</p>
+
+    <hr>
+
+    <h2>What the Simulation Got Wrong</h2>
+
+    <p><strong>Dwight left too early.</strong> Historical Dwight stayed until the end in 1847. Simulated Dwight left in 1844. The simulation made him too sensitive to morale collapse. Once morale hit zero, his agent spiraled toward departure. In reality, Dwight&rsquo;s deep attachment to the community&rsquo;s musical life kept him anchored long after the economics failed. Lesson: hobbies are load-bearing.</p>
+
+    <p><strong>No Fourier conversion.</strong> The real Brook Farm adopted Charles Fourier&rsquo;s phalanx system in 1844, a dramatic ideological pivot that split the community. In the simulation, nobody proposed it. The agents were too occupied with the immediate crisis to consider systemic redesign. This might actually be realistic: people in survival mode do not reorganize. They cope. Still, it missed a key historical turning point.</p>
+
+    <p><strong>Morale was too sticky at zero.</strong> Once morale hit 0%, it never recovered. Real communities oscillate. A good harvest, a successful concert, a new member joining can temporarily lift spirits even in decline. The simulation needed a recovery mechanism for positive events. Nineteen rounds of zero morale is not collapse. It is a flatline.</p>
+
+    <p><strong>The conversations were too literary.</strong> The agents produced conversations that read like 19th-century literary fiction. Beautiful, almost too coherent. Real people in crisis do not speak in polished paragraphs. They stammer, contradict themselves, say things they do not mean. The agents were performing authenticity rather than being authentic. Though this is, in a way, exactly what the real Brook Farm members did. They were all writers and intellectuals performing the simple life. So maybe Haiku got it right by accident.</p>
+
+    <figure>
+      <img src="../images/blog/utopia/counterfactual.png" alt="Counterfactual analysis showing how different conditions affect community outcomes">
+      <figcaption>Counterfactual experiments: what changes when you remove a key member or double the resources?</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>Unexpected Findings</h2>
+
+    <p><strong>The speech spiral.</strong> Dana gave 15 speeches about the financial crisis and farmed 3 times. He became the person who discussed the problem instead of working on it. This emergent behavior, substituting discourse for action, is a failure mode observed in real organizations. The agent was not programmed to do this. It emerged from the tension between his analytical persona and his loyalty to the group. If you have ever worked at a company where everyone agrees the problem is urgent and nobody does anything about it, you have seen the speech spiral.</p>
+
+    <p><strong>Sophia as invisible load-bearer.</strong> She taught 20 out of 30 rounds with barely any acknowledgment from the others. The school was the only thing keeping the community financially alive, and nobody seemed to notice. Her satisfaction stayed high not because she was appreciated, because she had work that was genuinely hers. The agents reproduced the pattern of invisible female labor without being instructed to.</p>
+
+    <p><strong>Quality of inner thoughts.</strong> We expected simple reasoning. We got Hawthorne thinking: <em>&ldquo;We are all fugitives of a sort, though we wear our flight as noble purpose.&rdquo;</em> And Dana, after deflecting Ripley&rsquo;s plea for help: <em>&ldquo;This is the day I moved from observer of our collapse to active participant in the silence that enables it.&rdquo;</em> Tagged with: <strong>Cowardice</strong>. The agents were doing genuine introspection, not just decision-making.</p>
+
+    <p><strong>Key moments worked.</strong> We gave agents the ability to flag certain events as key moments with emotional tags. They used it sparingly: 21 moments across 30 rounds. The moments they chose were narratively correct. The night Dwight confessed doubt. Hawthorne&rsquo;s departure. The conversation where Sophia named what was broken. These are the moments a novelist would choose. They are also the moments the real Brook Farm members wrote about in their letters.</p>
+
+    <hr>
+
+    <h2>What Is Next</h2>
+
+    <p>This is one run of one community. The counterfactual experiments are queued: what happens without Hawthorne? Without Sophia and the school? With double the food? Five baseline seeds will tell us whether the failure mode is reproducible or a lucky accident.</p>
+
+    <p>Beyond Brook Farm, there are dozens of documented utopian experiments: Oneida, New Harmony, the Shakers. Each failed differently. Each is a test case.</p>
+
+    <p>The code is open. You can clone the repo, write your own persona cards, and run your own commune tonight. Maybe yours will survive. Ours did not.</p>
+
+    <p>Or maybe we just had fun watching AI agents try to build utopia and fail the same way we always have. That is a good enough reason.</p>
+
+    <hr>
+
+    <p><em>Code and data: <a href="https://github.com/menggg22/utopia">github.com/menggg22/utopia</a></em></p>
+
+    <div class="article-colophon">
+      <em>This experiment was designed and built in one evening by a human and an AI agent working together, fueled by sangria and Beatles. The AI researched the historical figures, wrote the persona cards, designed the simulation engine, and drafted this post. The human had the idea, made the design decisions, stress-tested the assumptions, and ran the experiments. Neither could have done it alone in one night.</em>
+    </div>
+
+    <a href="../blog.html" class="article-back">&larr; Back to Blog</a>
+
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-blocks"><span></span><span></span><span></span></div>
+      <p class="footer-text">&copy; 2026 Menggg</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
