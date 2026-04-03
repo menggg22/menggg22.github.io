@@ -40,6 +40,13 @@
   max-width: 720px;
 }
 
+.article-byline {
+  margin-top: 0.75rem;
+  font-size: var(--size-sm);
+  color: var(--text2);
+  font-weight: 500;
+}
+
 .article-header p.article-subtitle {
   margin-top: 0.75rem;
   color: var(--text2);
