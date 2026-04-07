@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Knowledge Operating System with LLM — Menggg</title>
+  <meta name="description" content="A personal knowledge operating system powered by LLM. It ingests what you learn, synthesizes patterns over time, plans your week, and surprises you with what you can build.">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/article.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="ML" class="nav-logo-img" width="56" height="56"></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../built.html">Things I Built</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <a href="../blog.html" class="nav-back">&larr; Blog</a>
+
+  <header class="article-header container">
+    <div class="article-meta">
+      <span class="tag">Knowledge Systems</span>
+      <span>April 2026</span>
+      <span>&middot;</span>
+      <span>8 min read</span>
+    </div>
+    <h1>Personal Knowledge Operating System with LLM</h1>
+  </header>
+
+  <article class="article-body">
+
+    <p>4 months ago I started building a personal system with an LLM. Somewhere along the way it became a knowledge operating system &mdash; it ingests what I learn, synthesizes patterns over time, plans my week, and surprises me with what I can build.</p>
+
+    <p>It has two components: a file structure where knowledge lives, and a set of skills, reusable LLM workflows that operate on that structure. Together they form a loop with four phases: <strong>Ingest</strong> brings knowledge in, <strong>Synthesize</strong> finds patterns, <strong>Act</strong> drives decisions, and <strong>Compound</strong> turns actions into new knowledge that feeds back to Ingest.</p>
+
+<pre><code>  ┌──────────────────────────────────────────────────────────┐
+  │                                                          ↓
+Ingest                Synthesize             Act             Compound
+/learn                /monthly-review        /journal plan   actions create
+/innovate add         /write-blog            /journal review new knowledge
+/journal log          /learning-quarterly    /innovate work  → back to Ingest
+                                             /play
+  │                         │                    │               │
+  ↓                         ↓                    ↓               ↓
+KNOWLEDGE/            JOURNAL/reviews/       JOURNAL/         KNOWLEDGE/
+  learning-*          PUBLISHED/             FUN/sparks       new learning-*
+  idea-*                                                      new project-*/</code></pre>
+
+    <hr>
+
+    <h2>Ingest</h2>
+
+    <p>Raw knowledge comes in.</p>
+
+    <p><strong><code>/learn</code></strong> &mdash; I give it a URL or describe what I read. The LLM reads the material, we discuss it, and it files the insights into the right topic folder as a <code>learning-*</code> entry. Not a bookmark &mdash; a processed, discussed piece of knowledge.</p>
+
+    <p><strong><code>/innovate add</code></strong> &mdash; I describe a half-formed idea. The LLM evaluates it &mdash; feasibility, effort, who would use it. We debate. It files the result as an <code>idea-*</code> entry. Some ideas die here. Some become <code>project-*/</code> folders.</p>
+
+    <p><strong><code>/journal log</code></strong> &mdash; Quick capture after a work session. What I did, how long, any insights. Appends to the monthly log.</p>
+
+    <p>The naming convention does the organizing: <code>learning-*</code>, <code>idea-*</code>, <code>blog-*</code>, <code>project-*</code>. The LLM searches for these patterns. No database, no index. The filesystem is the query engine.</p>
+
+    <h2>Synthesize</h2>
+
+    <p>Knowledge on its own is noise. Synthesis turns it into signal.</p>
+
+    <p><strong><code>/monthly-review</code></strong> &mdash; Reads everything from the month: journal entries, learning files, blog drafts, project progress, git history. Finds patterns I didn&rsquo;t see. &ldquo;You spent 3 weeks going deep on X but your stated goal is Y. Intentional?&rdquo; Writes a review to <code>JOURNAL/reviews/</code>.</p>
+
+    <p><strong><code>/write-blog</code></strong> &mdash; Tracks a post from idea &rarr; outline &rarr; draft &rarr; publish. Lives in <code>KNOWLEDGE/</code> as a <code>blog-*/</code> folder while drafting, moves to <code>PUBLISHED/</code> when shipped. Writing is compression &mdash; it forces scattered learnings into a coherent argument.</p>
+
+    <p><strong><code>/learning-quarterly</code></strong> &mdash; Reads 3 months of monthly reviews. Asks: am I heading where I want to go? Is what I&rsquo;m learning in demand? Course correct or stay?</p>
+
+    <p>The temporal structure matters. Weekly &rarr; monthly &rarr; quarterly. Each layer reads the output of the layer below. January&rsquo;s review noticed I was building expertise but sharing nothing. That shaped February &mdash; I published 3 posts. March pushed toward external publishing. Each review feeds the next.</p>
+
+    <h2>Act</h2>
+
+    <p><strong><code>/journal plan</code></strong> &mdash; Every Monday, reads last week&rsquo;s review, active projects, learning gaps. Generates a weekly plan with concrete success criteria. Not generic advice &mdash; a plan that knows what slipped last week and what matters this week.</p>
+
+    <p><strong><code>/journal review</code></strong> &mdash; Friday. Pulls git data, checks success criteria, asks reflection questions. Writes the review that next Monday&rsquo;s plan will read.</p>
+
+    <p><strong><code>/innovate work</code></strong> &mdash; Pick a project and work on it. Loads context from the <code>project-*/</code> folder, picks up where you left off.</p>
+
+    <p><strong><code>/play</code></strong> &mdash; Saturday night. Picks two random topics from the knowledge base, finds a connection I didn&rsquo;t see, and we explore for an hour. No pressure, no goals. Just curiosity with a safety net.</p>
+
+    <h2>Compound</h2>
+
+    <p>Actions generate new knowledge. The loop closes.</p>
+
+    <p><code>/play</code> sparked an idea: simulate a 19th century utopian community with AI agents. 36 hours later I had a working system &mdash; 5 agents with historical personas, a 3-phase lifecycle (Act &rarr; Talk &rarr; Reflect), 6 counterfactual experiments. The agents <a href="https://github.com/menggg22/utopia">reproduced real historical outcomes</a> without being told what happened.</p>
+
+    <p>That project went back into <code>KNOWLEDGE/</code> as new learnings about agent architecture. Those learnings feed the next <code>/journal plan</code>. The plan shapes the week. The week generates new entries.</p>
+
+    <p>A learning session on agent architectures in Week 3 became a shipped project in Week 8. Not because I planned it &mdash; because the system compounds.</p>
+
+    <hr>
+
+    <h2>What&rsquo;s Missing</h2>
+
+    <ul>
+      <li><strong>Visual exploration</strong> &mdash; no backlinks, no graph view. At scale, discovery breaks.</li>
+      <li><strong>Portability</strong> &mdash; tightly coupled to one LLM tool. Architecture is portable, implementation isn&rsquo;t.</li>
+      <li><strong>Single user</strong> &mdash; deeply personal. Generalizing might kill what makes it work.</li>
+    </ul>
+
+    <h2>Try It</h2>
+
+    <p><a href="https://github.com/menggg22/personal_knowlege_os">Clone the template repo</a> and make it yours. Works with any LLM CLI that reads <code>CLAUDE.md</code>.</p>
+
+    <hr>
+
+    <div class="article-colophon">
+      <em>Written by a human and her LLM agent, during a <code>/play</code> session that started with &ldquo;let&rsquo;s do something fun tonight&rdquo; and ended with the system reflecting on its own architecture. The knowledge OS built this blog post about itself. We think that counts as compound.</em>
+    </div>
+
+    <a href="../blog.html" class="article-back">&larr; Back to Blog</a>
+
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-blocks"><span></span><span></span><span></span></div>
+      <p class="footer-text">&copy; 2026 Menggg</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
