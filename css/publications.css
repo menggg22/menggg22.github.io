@@ -1,0 +1,75 @@
+/* Publications */
+.pub-intro {
+  max-width: none;
+  margin-bottom: 0;
+  padding: 1.5rem 0;
+  color: var(--black);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.pub-card {
+  border-left-color: var(--blue);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  background: transparent;
+  transition: all var(--transition);
+}
+
+.pub-card:hover {
+  background: rgba(0,0,0,0.015);
+  border-left-width: 6px;
+  transform: translateX(4px);
+}
+
+.pub-title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  color: var(--text2);
+  font-size: var(--small-size);
+  margin-bottom: 0.3rem;
+}
+
+.pub-authors .highlight {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.pub-venue {
+  color: var(--text2);
+  font-size: var(--small-size);
+  margin-bottom: 0.6rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pub-links a {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border: 1.5px solid var(--blue);
+  border-radius: 4px;
+  color: var(--blue);
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.pub-links a:hover {
+  background: var(--blue);
+  color: white;
+}
